@@ -45,7 +45,7 @@ def join_us():
 
 
 @app.route('/getting-married/the-shindig/')
-@render_template('')
+@render_template('the-shindig')
 def the_shindig():
     return {}
 
@@ -53,6 +53,12 @@ def the_shindig():
 @app.route('/getting-married/venue/')
 @render_template('venue')
 def venue():
+    return {}
+
+
+@app.route('/getting-married/accommodation/')
+@render_template('accommodation')
+def accommodation():
     return {}
 
 
