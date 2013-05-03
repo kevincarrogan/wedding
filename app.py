@@ -50,6 +50,12 @@ def the_shindig():
     return {}
 
 
+@app.route('/getting-married/costume/')
+@render_template('costume')
+def costume():
+    return {}
+
+
 @app.route('/getting-married/venue/')
 @render_template('venue')
 def venue():
