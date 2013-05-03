@@ -1,6 +1,7 @@
 import os
 import gevent
 import gevent.monkey
+import functools
 
 from gevent.pywsgi import WSGIServer
 gevent.monkey.patch_all()
@@ -24,6 +25,7 @@ def render_template(template_name):
     template = loader.load_name('templates/%s' % template_name)
 
     def func_wrapper(func):
+        @functools.wraps(func)
         def renderer():
             context = func()
 
@@ -34,6 +36,12 @@ def render_template(template_name):
         return renderer
 
     return func_wrapper
+
+
+@app.route('/getting-married/join-us/')
+@render_template('join-us')
+def join_us():
+    return {}
 
 
 @app.route('/getting-married/')
