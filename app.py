@@ -74,6 +74,18 @@ def photography():
     return {}
 
 
+@app.route('/getting-married/gifts/')
+@render_template('gifts')
+def gifts():
+    return {}
+
+
+@app.route('/getting-married/contact/')
+@render_template('contact')
+def contact():
+    return {}
+
+
 @app.route('/getting-married/')
 @render_template('getting-married')
 def getting_married():
