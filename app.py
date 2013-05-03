@@ -68,6 +68,12 @@ def accommodation():
     return {}
 
 
+@app.route('/getting-married/photography/')
+@render_template('photography')
+def photography():
+    return {}
+
+
 @app.route('/getting-married/')
 @render_template('getting-married')
 def getting_married():
