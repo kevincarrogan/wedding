@@ -105,7 +105,7 @@ textarea {
 }
 
 html {
-    height: 100%;
+    min-height: 100%;
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
@@ -151,6 +151,7 @@ main {
     margin: 0 auto;
     padding: 50px;
     box-sizing: border-box;
+    margin-bottom: 50px;
 }
 
 main > h1 {
