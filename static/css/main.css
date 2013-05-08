@@ -104,9 +104,20 @@ textarea {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'KomikaTextKapsRegular';
+    src: url('/static/fonts/KOMTXT__-webfont.eot');
+    src: url('/static/fonts/KOMTXT__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/KOMTXT__-webfont.woff') format('woff'),
+         url('/static/fonts/KOMTXT__-webfont.ttf') format('truetype'),
+         url('/static/fonts/KOMTXT__-webfont.svg#KomikaTextKapsBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     min-height: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "KomikaTextKapsRegular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 body {
