@@ -93,10 +93,33 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+    font-family: 'KomikaTextKapsBold';
+    src: url('/static/fonts/KOMTXTKB-webfont.eot');
+    src: url('/static/fonts/KOMTXTKB-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/KOMTXTKB-webfont.woff') format('woff'),
+         url('/static/fonts/KOMTXTKB-webfont.ttf') format('truetype'),
+         url('/static/fonts/KOMTXTKB-webfont.svg#KomikaTextKapsBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
 body {
     background: url('/static/img/scottpilgrim.png'), url('/static/img/ironman.png'), url('/static/img/seamlesspaper4.jpg');
     background-repeat: no-repeat, no-repeat, repeat;
     background-position: bottom right, top left, top left;
+}
+
+h1 {
+    font-family: 'KomikaTextKapsBold', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+nav li {
+    float: left;
 }
 
 main {
