@@ -94,7 +94,8 @@ textarea {
    ========================================================================== */
 
 body {
-    background: url('/static/img/seamlesspaper4.jpg');
+    background: url('/static/img/ironman.png'), url('/static/img/seamlesspaper4.jpg');
+    background-repeat: no-repeat, repeat;
 }
 
 main {
