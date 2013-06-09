@@ -105,6 +105,10 @@ textarea {
     background-image: url(/static/img/axe-cop-star-wars.jpg);
 }
 
+.bohnanza header {
+    background-image: url(/static/img/bohnanza.jpg);
+}
+
 header {
     background-color: #444;
     background-position: center center;
@@ -171,6 +175,12 @@ nav li:hover {
 .axe-cop-star-wars nav .home-link {
     background-color: #594c3c;
     background-color: rgba(89, 76, 60, 0.4);
+}
+
+.bohnanza nav li:hover,
+.bohnanza nav .home-link {
+    background-color: #8c4a7b;
+    background-color: rgba(140, 74, 123, 0.7);
 }
 
 nav a {

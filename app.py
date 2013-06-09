@@ -34,6 +34,7 @@ def render_template(template_name):
                 'evil-dead',
                 'reservoir-troopers',
                 'axe-cop-star-wars',
+                'bohnanza',
             ])
 
             return render(
