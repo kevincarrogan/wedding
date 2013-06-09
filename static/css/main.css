@@ -94,15 +94,21 @@ textarea {
    ========================================================================== */
 
 .evil-dead header {
-    background: url(/static/img/evil-dead.jpg) no-repeat;
+    background-image: url(/static/img/evil-dead.jpg);
 }
 
 .reservoir-troopers header {
-    background: url(/static/img/reservoir-troopers.jpg) no-repeat;
+    background-image: url(/static/img/reservoir-troopers.jpg);
+}
+
+.axe-cop-star-wars header {
+    background-image: url(/static/img/axe-cop-star-wars.jpg);
 }
 
 header {
     background-color: #444;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: 100% !important;
     color: #fff;
     font-family: 'Minion Pro', Georgia, serif;
@@ -159,6 +165,12 @@ nav li:hover {
 .reservoir-troopers nav .home-link {
     background-color: #bfb521;
     background-color: rgba(191, 181, 33, 0.4);
+}
+
+.axe-cop-star-wars nav li:hover,
+.axe-cop-star-wars nav .home-link {
+    background-color: #594c3c;
+    background-color: rgba(89, 76, 60, 0.4);
 }
 
 nav a {

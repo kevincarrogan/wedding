@@ -33,6 +33,7 @@ def render_template(template_name):
             context['body_class'] = random.choice([
                 'evil-dead',
                 'reservoir-troopers',
+                'axe-cop-star-wars',
             ])
 
             return render(
