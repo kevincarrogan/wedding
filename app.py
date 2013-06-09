@@ -22,20 +22,23 @@ def index():
     return redirect('/getting-married/')
 
 
-def render_template(template_name):
-    template = loader.load_name('templates/%s' % template_name)
+def render_template(section_name):
+    template = loader.load_name('templates/%s' % section_name)
 
     def func_wrapper(func):
         @functools.wraps(func)
         def renderer():
             context = func()
 
-            context['body_class'] = random.choice([
-                'evil-dead',
-                'reservoir-troopers',
-                'axe-cop-star-wars',
-                'bohnanza',
-            ])
+            context.update({
+                'body_class': section_name,
+                'body_theme_class': random.choice([
+                    'evil-dead',
+                    'reservoir-troopers',
+                    'axe-cop-star-wars',
+                    'bohnanza',
+                ]),
+            })
 
             return render(
                 template,
