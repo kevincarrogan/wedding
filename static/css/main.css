@@ -207,26 +207,58 @@ nav li:hover {
     background-color: #000;
 }
 
-.evil-dead.home nav li:hover,
-.evil-dead.home nav .home-link {
+.evil-dead nav li:hover,
+.evil-dead.getting-married nav .getting-married-link,
+.evil-dead.join-us nav .join-us-link,
+.evil-dead.the-shindig nav .the-shindig-link,
+.evil-dead.venue nav .venue-link,
+.evil-dead.accommodation nav .accommodation-link,
+.evil-dead.costume nav .costume-link,
+.evil-dead.photography nav .photography-link,
+.evil-dead.gifts nav .gifts-link,
+.evil-dead.contact nav .contact-link {
     background-color: #274f73;
     background-color: rgba(39, 79, 115, 0.4);
 }
 
 .reservoir-troopers nav li:hover,
-.reservoir-troopers nav .home-link {
+.reservoir-troopers.getting-married nav .getting-married-link,
+.reservoir-troopers.join-us nav .join-us-link,
+.reservoir-troopers.the-shindig nav .the-shindig-link,
+.reservoir-troopers.venue nav .venue-link,
+.reservoir-troopers.accommodation nav .accommodation-link,
+.reservoir-troopers.costume nav .costume-link,
+.reservoir-troopers.photography nav .photography-link,
+.reservoir-troopers.gifts nav .gifts-link,
+.reservoir-troopers.contact nav .contact-link {
     background-color: #bfb521;
     background-color: rgba(191, 181, 33, 0.4);
 }
 
 .axe-cop-star-wars nav li:hover,
-.axe-cop-star-wars nav .home-link {
+.axe-cop-star-wars.getting-married nav .getting-married-link,
+.axe-cop-star-wars.join-us nav .join-us-link,
+.axe-cop-star-wars.the-shindig nav .the-shindig-link,
+.axe-cop-star-wars.venue nav .venue-link,
+.axe-cop-star-wars.accommodation nav .accommodation-link,
+.axe-cop-star-wars.costume nav .costume-link,
+.axe-cop-star-wars.photography nav .photography-link,
+.axe-cop-star-wars.gifts nav .gifts-link,
+.axe-cop-star-wars.contact nav .contact-link {
     background-color: #594c3c;
     background-color: rgba(89, 76, 60, 0.4);
 }
 
 .bohnanza nav li:hover,
-.bohnanza nav .home-link {
+.bohnanza.getting-married nav .getting-married-link,
+.bohnanza.join-us nav .join-us-link,
+.bohnanza.the-shindig nav .the-shindig-link,
+.bohnanza.venue nav .venue-link,
+.bohnanza.accommodation nav .accommodation-link,
+.bohnanza.costume nav .costume-link,
+.bohnanza.photography nav .photography-link,
+.bohnanza.gifts nav .gifts-link,
+.bohnanza.contact nav .contact-link {
     background-color: #8c4a7b;
     background-color: rgba(140, 74, 123, 0.7);
 }
