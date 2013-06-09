@@ -2,6 +2,7 @@ import os
 import gevent
 import gevent.monkey
 import functools
+import random
 
 from gevent.pywsgi import WSGIServer
 gevent.monkey.patch_all()
@@ -28,6 +29,11 @@ def render_template(template_name):
         @functools.wraps(func)
         def renderer():
             context = func()
+
+            context['body_class'] = random.choice([
+                'evil-dead',
+                'reservoir-troopers',
+            ])
 
             return render(
                 template,
