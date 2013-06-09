@@ -131,7 +131,7 @@ header {
     background-size: 100% !important;
     color: #fff;
     font-family: 'Minion Pro', Georgia, serif;
-    height: 400px;
+    padding-bottom: 40px;
     position: relative;
     text-align: center;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);

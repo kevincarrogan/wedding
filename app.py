@@ -100,7 +100,9 @@ def contact():
 @app.route('/getting-married/')
 @render_template('getting-married')
 def getting_married():
-    return {}
+    return {
+        'show_credits': True,
+    }
 
 
 if __name__ == '__main__':
