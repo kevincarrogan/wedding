@@ -129,7 +129,6 @@ header {
     color: #fff;
     font-family: 'Minion Pro', Georgia, serif;
     height: 400px;
-    padding-top: 20px;
     position: relative;
     text-align: center;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
@@ -190,13 +189,18 @@ nav {
 }
 
 nav ul {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 920px;
 }
 
 nav li {
     float: left;
     border-right: 1px solid #000;
+}
+
+nav li:first-of-type {
+    border-left: 1px solid #000;
 }
 
 nav li:hover {
