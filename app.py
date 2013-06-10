@@ -10,7 +10,7 @@ gevent.monkey.patch_all()
 from pystache.loader import Loader
 from pystache import render
 
-from flask import Flask, redirect
+from flask import Flask, redirect, request
 
 app = Flask(__name__)
 app.debug = True
@@ -30,6 +30,15 @@ def render_template(section_name):
         def renderer():
             context = func()
 
+            host = request.host
+
+            if host.endswith('kevinandria.com'):
+                first_person_name = 'Kevin'
+                second_person_name = 'Ria'
+            else:
+                first_person_name = 'Ria'
+                second_person_name = 'Kevin'
+
             context.update({
                 'body_class': section_name,
                 'body_theme_class': random.choice([
@@ -38,6 +47,8 @@ def render_template(section_name):
                     'axe-cop-star-wars',
                     'bohnanza',
                 ]),
+                'first_person_name': first_person_name,
+                'second_person_name': second_person_name,
             })
 
             return render(
