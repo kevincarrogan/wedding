@@ -94,8 +94,35 @@ textarea {
    ========================================================================== */
 
 body {
-    width: 960px;
+    color: #555;
+    font-family: 'helvetica neue', arial, sans-serif;
     margin: 0 auto;
+    padding-top: 2em;
+    width: 360px;
+}
+
+h1, h2 {
+    color: #2a2a2a;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    margin-bottom: 2em;
+}
+
+.event-information {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.event-information section {
+    margin-bottom: 1em;
 }
 
 /* ==========================================================================
