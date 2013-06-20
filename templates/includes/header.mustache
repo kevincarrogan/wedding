@@ -19,14 +19,12 @@
     <body class="{{ body_class }} {{ body_theme_class }}">
 
         <header>
-            <h1>{{ first_person_name }}<span class="heading-ampersand"> &amp; </span>{{ second_person_name }}</h1>
-            <p class="sub-heading">Our Wedding</p>
-            {{# show_credits }}
-            <div class="credits">
+            <h1><span class="person-name first-person-name {{ first_person_name_lower }}">{{ first_person_name }}</span><span class="visuallyhidden"> &amp; </span><span class="person-name second-person-name {{ second_person_name_lower }}">{{ second_person_name }}</span></h1>
+            <div class="event-information">
+                <p class="sub-heading">Our Wedding</p>
                 <p>{{ first_person_name }} and {{ second_person_name }}<sub> present </sub>our wedding</p>
                 <p><sup>Where </sup><a href="/getting-married/venue/">Hoxton Arches</a><sup> When </sup> <a href="/getting-married/the-shindig/">16 Nov</a></p>
             </div>
-            {{/ show_credits }}
             <nav>
                 <ul class="clearfix">
                     <li class="getting-married-link">

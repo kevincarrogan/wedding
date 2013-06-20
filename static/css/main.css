@@ -93,7 +93,59 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background-color: #f8f8f8;
+    font-family: 'proxima nova', 'Helvetica Neue', arial, sans-serif;
+}
 
+header h1 {
+    background-image: linear-gradient left, #f1f1f1, #e1e1e1;
+    border-left: 1px solid #ccc;
+    float: right;
+    padding: 0 100px;
+    width: 50%;
+}
+
+.person-name {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 300px;
+    line-height: 220px;
+    text-align: center;
+    width: 300px;
+    -webkit-transition: margin 0.05s linear;
+    transition: margin 0.05s linear;
+}
+
+.first-person-name {
+    background-color: rgba(255, 150, 150, 0.5);
+    border-color: rgba(255, 0, 0, 0.5);
+}
+
+.second-person-name {
+    background-color: rgba(150, 150, 255, 0.5);
+    border-color: rgba(0, 0, 255, 0.5);
+}
+
+header h1:hover .first-person-name {
+    margin-right: -15px;
+}
+
+header h1:hover .second-person-name {
+    margin-left: -15px;
+}
+
+.sub-heading {
+    box-sizing: border-box;
+    font-size: 400%;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+}
 
 /* ==========================================================================
    Helper classes
