@@ -176,8 +176,15 @@ nav a:first-of-type {
     border-top: none;
 }
 
-.js nav ul {
+.js nav {
     cursor: pointer;
+}
+
+.js nav.show-nav {
+    cursor: default;
+}
+
+.js nav ul {
     width: 2em;
 }
 
