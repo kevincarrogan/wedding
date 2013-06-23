@@ -16,47 +16,50 @@
         <link rel="stylesheet" href="/static/css/main.css">
         <script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body class="{{ body_class }} {{ body_theme_class }}">
+    <body>
 
         <header>
-            <h1>{{ first_person_name }}<span class="heading-ampersand"> &amp; </span>{{ second_person_name }}</h1>
-            <p class="sub-heading">Our Wedding</p>
-            {{# show_credits }}
-            <div class="credits">
-                <p>{{ first_person_name }} and {{ second_person_name }}<sub> present </sub>our wedding</p>
-                <p><sup>Where </sup><a href="/getting-married/venue/">Hoxton Arches</a><sup> When </sup> <a href="/getting-married/the-shindig/">16 Nov</a></p>
-            </div>
-            {{/ show_credits }}
-            <nav>
-                <ul class="clearfix">
-                    <li class="getting-married-link">
-                        <a href="/getting-married/">Home</a>
-                    </li>
-                    <li class="join-us-link">
-                        <a href="/getting-married/join-us/">Join Us</a>
-                    </li>
-                    <li class="the-shindig-link">
-                        <a href="/getting-married/the-shindig/">The Shindig</a>
-                    </li>
-                    <li class="venue-link">
-                        <a href="/getting-married/venue/">Venue</a>
-                    </li>
-                    <li class="accommodation-link">
-                        <a href="/getting-married/accommodation/">Accommodation</a>
-                    </li>
-                    <li class="costume-link">
-                        <a href="/getting-married/costume/">Costume</a>
-                    </li>
-                    <li class="photography-link">
-                        <a href="/getting-married/photography/">Photography</a>
-                    </li>
-                    <li class="gifts-link">
-                        <a href="/getting-married/gifts/">Gifts</a>
-                    </li>
-                    <li class="contact-link">
-                        <a href="/getting-married/contact/">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <h1>Ria and Kevin</h1>
+            <p class="byline">Getting Married</p>
         </header>
+
+        <section class="vevent">
+            <h1 class="summary visuallyhidden">Our Wedding</h1>
+
+            <!-- TODO: hCalendar -->
+            <div class="event-when event-information-item">
+                <h2>When</h2>
+                <p class="dtstart" title="2013-11-16">Saturday 16 November 2013</p>
+            </div>
+
+            <!-- TODO: hAddress -->
+            <div class="event-information-item adr location">
+                <h2>Where</h2>
+                <p class="extended-address">Hoxton Arches</p>
+                <p class="street-address">Arch 402 Cremer Street</p>
+                <p class="locality">London</p>
+                <p class="postal-code">E2 8HD</p>
+            </div>
+        </section>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">The Day</a>
+                </li>
+                <li>
+                    <a href="#">Getting There</a>
+                </li>
+                <li>
+                    <a href="#">Staying There</a>
+                </li>
+                <li>
+                    <a href="#">Gifts</a>
+                </li>
+            </ul>
+        </nav>
+
         <main>

@@ -40,13 +40,6 @@ def render_template(section_name):
                 second_person_name = 'Kevin'
 
             context.update({
-                'body_class': section_name,
-                'body_theme_class': random.choice([
-                    'evil-dead',
-                    'reservoir-troopers',
-                    'axe-cop-star-wars',
-                    'bohnanza',
-                ]),
                 'first_person_name': first_person_name,
                 'second_person_name': second_person_name,
             })
@@ -112,7 +105,7 @@ def contact():
 @render_template('getting-married')
 def getting_married():
     return {
-        'show_credits': True,
+        'show_event_information': True,
     }
 
 
