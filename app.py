@@ -93,6 +93,13 @@ def venue():
     return {}
 
 
+@app.route('/getting-married/staying-there/')
+@render_template('staying-there')
+def staying_there():
+    return {
+        'byline': 'Staying There',
+    }
+
 @app.route('/getting-married/accommodation/')
 @render_template('accommodation')
 def accommodation():
