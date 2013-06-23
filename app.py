@@ -79,6 +79,14 @@ def costume():
     return {}
 
 
+@app.route('/getting-married/getting-there/')
+@render_template('getting-there')
+def getting_there():
+    return {
+        'byline': 'Getting There',
+    }
+
+
 @app.route('/getting-married/venue/')
 @render_template('venue')
 def venue():
