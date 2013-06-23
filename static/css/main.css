@@ -142,7 +142,8 @@ nav {
     padding-bottom: 0;
 }
 
-nav ul {
+nav ul,
+.js nav.show-nav ul {
     margin: 0 auto;
     padding: 0;
     width: 240px;
@@ -156,7 +157,12 @@ nav ul li:first-of-type {
     border: none;
 }
 
-nav a {
+.js nav.show-nav li {
+    height: auto;
+}
+
+nav a,
+.js nav.show-nav a {
     color: #2a2a2a;
     display: block;
     font-weight: 400;
@@ -168,6 +174,19 @@ nav a {
 
 nav a:first-of-type {
     border-top: none;
+}
+
+.js nav ul {
+    cursor: pointer;
+    width: 2em;
+}
+
+.js nav li {
+    height: 0.5em;
+}
+
+.js nav a {
+    display: none;
 }
 
 main {
