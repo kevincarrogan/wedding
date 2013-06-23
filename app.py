@@ -115,7 +115,9 @@ def photography():
 @app.route('/getting-married/gifts/')
 @render_template('gifts')
 def gifts():
-    return {}
+    return {
+        'byline': 'Gifts',
+    }
 
 
 @app.route('/getting-married/contact/')
