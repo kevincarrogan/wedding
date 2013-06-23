@@ -62,7 +62,9 @@ def join_us():
 @app.route('/getting-married/the-day/')
 @render_template('the-day')
 def the_day():
-    return {}
+    return {
+        'byline': 'The Day',
+    }
 
 
 @app.route('/getting-married/the-shindig/')
@@ -112,6 +114,7 @@ def contact():
 def getting_married():
     return {
         'show_event_information': True,
+        'byline': 'Getting Married',
     }
 
 
