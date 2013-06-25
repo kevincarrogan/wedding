@@ -131,6 +131,7 @@ def contact():
 def getting_married():
     return {
         'show_event_information': True,
+        'show_navigation': True,
         'byline': 'Getting Married',
     }
 
