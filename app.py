@@ -126,6 +126,12 @@ def contact():
     return {}
 
 
+@app.route('/getting-married/rsvp/')
+@render_template('rsvp')
+def rsvp():
+    return {}
+
+
 @app.route('/getting-married/')
 @render_template('getting-married')
 def getting_married():
