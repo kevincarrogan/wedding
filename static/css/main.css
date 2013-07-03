@@ -313,7 +313,70 @@ main h1 {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+    body {
+        width: 960px;
+    }
+
+    .js nav.show-nav {
+        padding: 0.5em 0;
+    }
+
+    nav ul, .js nav.show-nav ul {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        border: none;
+        float: left;
+    }
+
+    .js nav.show-nav li:last-of-type a {
+        border: none;
+    }
+
+    nav a, .js nav.show-nav a {
+        border-right: 1px solid #ccc;
+        box-sizing: border-box;
+        padding: 1em;
+    }
+
+    nav:before,
+    nav:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    nav:after {
+        clear: both;
+    }
+
+    /*
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+
+    nav {
+        *zoom: 1;
+    }
+
+    main {
+        padding: 0 2em;
+    }
+
+    .vevent {
+        box-sizing: border-box;
+        display: table;
+        padding-left: 4em;
+        padding-right: 4em;
+        width: 100%;
+    }
+
+    .event-information-item {
+        display: table-cell;
+        vertical-align: middle;
+    }
 }
 
 @media print,
