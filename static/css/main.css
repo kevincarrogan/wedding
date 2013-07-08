@@ -94,9 +94,8 @@ textarea {
    ========================================================================== */
 
 body {
-    color: #666;
-    font-family: 'helvetica neue', arial, sans-serif;
-    font-weight: 200;
+    color: #555;
+    font-family: 'avenir next', avenir, 'helvetica neue', arial, sans-serif;
     margin: 0 auto;
     padding: 2em 1em;
     text-align: center;
@@ -198,6 +197,7 @@ nav a:first-of-type {
 }
 
 main {
+    font-size: 90%;
     text-align: left;
     padding: 0 1em;
 }
@@ -208,6 +208,10 @@ main h1 {
 
 main p {
     line-height: 160%;
+}
+
+b, strong {
+    font-weight: 500;
 }
 
 /* ==========================================================================
