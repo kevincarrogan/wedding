@@ -106,10 +106,11 @@ body {
 h1, h2 {
     font-weight: 300;
     margin: 0;
+    color: #2a2a2a;
 }
 
-h1, h2 {
-    color: #2a2a2a;
+main > h1, h2 {
+    color: #5b92b5;
 }
 
 header, .vevent, nav {
@@ -123,7 +124,7 @@ header h1 {
 }
 
 .byline {
-    color: #888;
+    color: #5b92b5;
     font-size: 2em;
     font-weight: 300;
     margin: -0.5em 0 0 0;
