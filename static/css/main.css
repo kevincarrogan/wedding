@@ -214,6 +214,16 @@ b, strong {
     font-weight: 500;
 }
 
+address {
+    text-align: center;
+}
+
+address .map {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
