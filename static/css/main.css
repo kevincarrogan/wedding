@@ -198,6 +198,7 @@ nav a:first-of-type {
 
 .js nav.show-nav:after {
     content: "";
+    display: none;
     padding: 0;
 }
 
