@@ -57,80 +57,97 @@ def render_template(section_name):
 @app.route('/getting-married/join-us/')
 @render_template('join-us')
 def join_us():
-    return {}
+    return {
+        'section_header': 'Join Us',
+    }
 
 
 @app.route('/getting-married/the-day/')
 @render_template('the-day')
 def the_day():
     return {
-        'byline': 'The Day',
+        'section_header': 'The Day',
     }
 
 
 @app.route('/getting-married/the-shindig/')
 @render_template('the-shindig')
 def the_shindig():
-    return {}
+    return {
+        'section_header': 'The Shindig',
+    }
 
 
 @app.route('/getting-married/costume/')
 @render_template('costume')
 def costume():
-    return {}
+    return {
+        'section_header': 'Costume',
+    }
 
 
 @app.route('/getting-married/getting-there/')
 @render_template('getting-there')
 def getting_there():
     return {
-        'byline': 'Getting There',
+        'section_header': 'Getting There',
     }
 
 
 @app.route('/getting-married/venue/')
 @render_template('venue')
 def venue():
-    return {}
+    return {
+        'section_header': 'Venue',
+    }
 
 
 @app.route('/getting-married/staying-there/')
 @render_template('staying-there')
 def staying_there():
     return {
-        'byline': 'Staying There',
+        'section_header': 'Staying There',
     }
+
 
 @app.route('/getting-married/accommodation/')
 @render_template('accommodation')
 def accommodation():
-    return {}
+    return {
+        'section_header': 'Accommodation',
+    }
 
 
 @app.route('/getting-married/photography/')
 @render_template('photography')
 def photography():
-    return {}
+    return {
+        'section_header': 'Photography',
+    }
 
 
 @app.route('/getting-married/gifts/')
 @render_template('gifts')
 def gifts():
     return {
-        'byline': 'Gifts',
+        'section_header': 'Gifts',
     }
 
 
 @app.route('/getting-married/contact/')
 @render_template('contact')
 def contact():
-    return {}
+    return {
+        'section_header': 'Contact',
+    }
 
 
 @app.route('/getting-married/rsvp/')
 @render_template('rsvp')
 def rsvp():
-    return {}
+    return {
+        'section_header': 'RSVP',
+    }
 
 
 @app.route('/getting-married/')
@@ -139,7 +156,7 @@ def getting_married():
     return {
         'show_event_information': True,
         'show_navigation': True,
-        'byline': 'Getting Married',
+        'section_header': 'Getting Married',
     }
 
 
