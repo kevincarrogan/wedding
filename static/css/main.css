@@ -208,7 +208,7 @@ main {
     padding: 0 1em;
 }
 
-main h1 {
+main h1, main h2 {
     text-align: center;
 }
 
