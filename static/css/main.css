@@ -203,22 +203,17 @@ nav a:first-of-type {
 }
 
 main {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 90%;
     text-align: left;
     padding: 0 1em;
 }
 
-main h1, main h2 {
+main h1 {
     text-align: center;
-}
-
-main h2 {
-    font-family: 'avenir next', avenir, 'helvetica neue', arial, sans-serif;
 }
 
 main p {
     line-height: 160%;
-    margin: 1em;
 }
 
 b, strong {
