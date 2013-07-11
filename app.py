@@ -42,6 +42,8 @@ def render_template(section_name):
             context.update({
                 'first_person_name': first_person_name,
                 'second_person_name': second_person_name,
+                'first_person_class': first_person_name.lower(),
+                'second_person_class': second_person_name.lower(),
                 'info_email': 'info@%sand%s.com' % (first_person_name.lower(), second_person_name.lower())
             })
 
