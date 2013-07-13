@@ -15,63 +15,71 @@
         <link rel="stylesheet" href="/static/css/normalize.css">
         <link rel="stylesheet" href="/static/css/main.css">
         <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+        <link href='//fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
         <script src="/static/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+        <div class="header-wrapper">
+            <header>
+                <h1>
+                    <span class="ir {{first_person_class }} first-person">{{ first_person_name}}</span><span class="ampersand"> and </span><span class="ir {{ second_person_class }} second-person">{{ second_person_name }}</span><span class="visuallyhidden"> - Our Wedding</span></h1>
+                <h2>Getting Married</h2>
+            </header>
 
-        <header>
-            <h1>{{ first_person_name}} and {{ second_person_name }}<span class="visuallyhidden"> - Our Wedding</span></h1>
-            <h2>{{ section_header }}</h2>
-        </header>
+            {{# show_event_information }}
+            <section class="vevent">
+                <h1 class="summary visuallyhidden">
+                    The Wedding
+                </h1>
 
-        {{# show_event_information }}
-        <section class="vevent">
-            <h1 class="summary visuallyhidden">
-                The Wedding
-            </h1>
+                <!-- TODO: hCalendar -->
+                <div class="event-when event-information-item dtstart" title="2013-11-16">
+                    <h2>When</h2>
+                    <div class="event-information-wrapper">
+                        <p class="value">3pm</p>
+                        <p class="value">Saturday 16 November 2013</p>
+                </div>
+                </div>
 
-            <!-- TODO: hCalendar -->
-            <div class="event-when event-information-item dtstart" title="2013-11-16">
-                <h2>When</h2>
-                <p class="value">3pm</p>
-                <p class="value">Saturday 16 November 2013</p>
-            </div>
+                <!-- TODO: hAddress -->
+                <div class="event-information-item adr location">
+                    <h2>Where</h2>
+                    <p class="extended-address">Hoxton Arches</p>
+                    <p class="street-address">Arch 402 Cremer Street</p>
+                    <p class="locality">London</p>
+                    <p class="postal-code">E2 8HD</p>
+                </div>
+            </section>
+            {{/ show_event_information }}
 
-            <!-- TODO: hAddress -->
-            <div class="event-information-item adr location">
-                <h2>Where</h2>
-                <p class="extended-address">Hoxton Arches</p>
-                <p class="street-address">Arch 402 Cremer Street</p>
-                <p class="locality">London</p>
-                <p class="postal-code">E2 8HD</p>
-            </div>
-        </section>
-        {{/ show_event_information }}
-
-        <nav {{# show_navigation }}class="show-nav"{{/ show_navigation }}>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/getting-married/rsvp/">RSVP</a>
-                </li>
-                <li>
-                    <a href="/getting-married/the-day/">The Day</a>
-                </li>
-                <li>
-                    <a href="/getting-married/getting-there/">Getting There</a>
-                </li>
-                <li>
-                    <a href="/getting-married/photography">Photography</a>
-                </li>
-                <li>
-                    <a href="/getting-married/staying-there/">Staying There</a>
-                </li>
-                <li>
-                    <a href="/getting-married/gifts/">Gifts</a>
-                </li>
-            </ul>
-        </nav>
+            <nav {{# show_navigation }}class="show-nav"{{/ show_navigation }}>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/getting-married/rsvp/">RSVP</a>
+                    </li>
+                    <li>
+                        <a href="/getting-married/the-day/">The Day</a>
+                    </li>
+                    <li>
+                        <a href="/getting-married/getting-there/">Getting There</a>
+                    </li>
+                    <li>
+                        <a href="/getting-married/photography">Photography</a>
+                    </li>
+                    <li>
+                        <a href="/getting-married/staying-there/">Staying There</a>
+                    </li>
+                    <li>
+                        <a href="/getting-married/gifts/">Gifts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         <main>
+            <header>
+                <h1>{{ section_header }}</h1>
+            </header>

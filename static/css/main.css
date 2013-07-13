@@ -108,8 +108,13 @@ h1, h2 {
     color: #2a2a2a;
 }
 
-main > h1, h2 {
+main {
+    font-family: Merriweather, Georgia, Cambria, "Times new roman", serif;
+}
+
+main > h1, main header h1, h2 {
     color: #5b92b5;
+    font-family: 'avenir next', avenir, 'Open Sans', 'helvetica neue', arial, sans-serif;
 }
 
 header, .vevent, nav {
@@ -120,6 +125,10 @@ header, .vevent, nav {
 
 header h1 {
     font-size: 2.5em;
+}
+
+header h1 .first-person, header h1 .second-person {
+    display: inline-block;
 }
 
 header h2 {
@@ -194,6 +203,7 @@ footer .ampersand {
 }
 
 nav {
+    margin-bottom: 1em;
     margin-top: -2em;
     padding-bottom: 0;
 }
@@ -259,9 +269,16 @@ nav a:first-of-type {
 }
 
 main {
+    color: #111;
     font-size: 90%;
     text-align: left;
     padding: 0 1em;
+}
+
+main header {
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 main h1, main h2 {
@@ -400,6 +417,130 @@ address .map img {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    body {
+        margin: 0;
+        padding: 0;
+        min-width: 960px;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    .header-wrapper {
+        background-color: #f5f5f5;
+        bottom: 0;
+        box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+        left: 0;
+        overflow: scroll;
+        position: absolute;
+        top: 0;
+        width: 367px;
+    }
+
+    header {
+        margin-bottom: 1em;
+        padding: 1em 0;
+    }
+
+    header, .vevent {
+        box-shadow: 0 1px #fff;
+    }
+
+    .vevent {
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+    }
+
+    header .ria, header .kevin {
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+    }
+
+    header .ria {
+        background: url('/static/img/ria.jpg') left -25px;
+        background-size: 80px;
+    }
+
+    header .kevin {
+        background: url('/static/img/kevin.jpg') -10px -12px;
+        background-size: 90px;
+    }
+
+    header .ampersand {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    nav {
+        border-bottom: none;
+        margin-top: -1em;
+    }
+
+    nav ul {
+        display: block !important;
+    }
+
+    nav:after {
+        content: none !important;
+        padding: 0 !important;
+    }
+
+    nav ul, .js nav.show-nav ul {
+        width: auto;
+    }
+
+    nav ul li, nav ul li:first-of-type {
+        border-top: none;
+        border-bottom: 1px solid #ccc;
+        box-shadow: 0 1px #fff;
+    }
+
+    nav ul li a {
+        transition: background-color 0.2s;
+    }
+
+    nav ul li a:hover {
+        background-color: #fff;
+    }
+
+    main {
+        font-size: 100%;
+        margin-left: 367px;
+        padding: 1em 2em;
+    }
+
+    main header {
+        height: 140px;
+    }
+
+    main header h1 {
+        font-size: 500%;
+        line-height: 1.7em;
+        text-align: left;
+    }
+
+    main p {
+        line-height: 200%;
+    }
+
+    footer {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
 }
 
 @media print,
