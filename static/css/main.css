@@ -417,11 +417,19 @@ address .map img {
 
 @media only screen and (min-width: 769px) {
     /* Style adjustments for viewports that meet the condition */
+    html {
+        height: 100%;
+    }
+
     body {
+        bottom: 0;
+        height: 100%;
         margin: 0;
         padding: 0;
+        position: relative;
         min-width: 960px;
         max-width: 1200px;
+        top: 0;
         width: 100%;
     }
 
@@ -431,7 +439,7 @@ address .map img {
         box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
         left: 0;
         overflow: scroll;
-        position: absolute;
+        position: fixed;
         top: 0;
         width: 367px;
     }
