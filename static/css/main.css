@@ -525,6 +525,7 @@ address .map img {
         font-size: 500%;
         line-height: 1.7em;
         text-align: left;
+        white-space: nowrap;
     }
 
     main p {
