@@ -303,7 +303,17 @@ address .map {
     width: 300px;
 }
 
-address .map img {
+.stations {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.stations a {
+    display: block;
+}
+
+.getting-there img {
     height: 300px;
     width: 300px;
 }
