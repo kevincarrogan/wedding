@@ -297,12 +297,6 @@ address {
     text-align: center;
 }
 
-address .map {
-    display: block;
-    margin: 0 auto;
-    width: 300px;
-}
-
 .stations {
     list-style: none;
     padding: 0;
