@@ -515,6 +515,13 @@ address .map img {
         transition: background-color 0.2s;
     }
 
+    .getting-married .getting-married-link,
+    .rsvp .rsvp-link,
+    .the-day .the-day-link,
+    .getting-there .getting-there-link,
+    .photography .photography-link,
+    .staying-there .staying-there-link,
+    .gifts .gifts-link,
     nav ul li a:hover {
         background-color: #fff;
     }

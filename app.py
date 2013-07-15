@@ -61,6 +61,7 @@ def render_template(section_name):
 def the_day():
     return {
         'section_header': 'The Day',
+        'body_class': 'the-day',
     }
 
 
@@ -69,6 +70,7 @@ def the_day():
 def getting_there():
     return {
         'section_header': 'Getting There',
+        'body_class': 'getting-there',
     }
 
 
@@ -77,6 +79,7 @@ def getting_there():
 def staying_there():
     return {
         'section_header': 'Staying There',
+        'body_class': 'staying-there',
     }
 
 
@@ -85,6 +88,7 @@ def staying_there():
 def photography():
     return {
         'section_header': 'Photography',
+        'body_class': 'photography',
     }
 
 
@@ -93,6 +97,7 @@ def photography():
 def gifts():
     return {
         'section_header': 'Gifts',
+        'body_class': 'gifts',
     }
 
 
@@ -101,6 +106,7 @@ def gifts():
 def rsvp():
     return {
         'section_header': 'RSVP',
+        'body_class': 'rsvp',
     }
 
 
@@ -111,6 +117,7 @@ def getting_married():
         'show_event_information': True,
         'show_navigation': True,
         'section_header': 'Getting Married',
+        'body_class': 'getting-married',
     }
 
 
