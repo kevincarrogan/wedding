@@ -56,35 +56,11 @@ def render_template(section_name):
     return func_wrapper
 
 
-@app.route('/getting-married/join-us/')
-@render_template('join-us')
-def join_us():
-    return {
-        'section_header': 'Join Us',
-    }
-
-
 @app.route('/getting-married/the-day/')
 @render_template('the-day')
 def the_day():
     return {
         'section_header': 'The Day',
-    }
-
-
-@app.route('/getting-married/the-shindig/')
-@render_template('the-shindig')
-def the_shindig():
-    return {
-        'section_header': 'The Shindig',
-    }
-
-
-@app.route('/getting-married/costume/')
-@render_template('costume')
-def costume():
-    return {
-        'section_header': 'Costume',
     }
 
 
@@ -96,27 +72,11 @@ def getting_there():
     }
 
 
-@app.route('/getting-married/venue/')
-@render_template('venue')
-def venue():
-    return {
-        'section_header': 'Venue',
-    }
-
-
 @app.route('/getting-married/staying-there/')
 @render_template('staying-there')
 def staying_there():
     return {
         'section_header': 'Staying There',
-    }
-
-
-@app.route('/getting-married/accommodation/')
-@render_template('accommodation')
-def accommodation():
-    return {
-        'section_header': 'Accommodation',
     }
 
 
@@ -133,14 +93,6 @@ def photography():
 def gifts():
     return {
         'section_header': 'Gifts',
-    }
-
-
-@app.route('/getting-married/contact/')
-@render_template('contact')
-def contact():
-    return {
-        'section_header': 'Contact',
     }
 
 
