@@ -309,12 +309,14 @@ address .map {
     text-align: center;
 }
 
-.stations a {
-    display: block;
-}
-
 .getting-there img {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    display: block;
     height: 300px;
+    margin: 0 auto;
+    margin-top: 0.25em;
+    padding: 0.5em;
     width: 300px;
 }
 
