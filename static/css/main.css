@@ -317,7 +317,12 @@ address .map {
     margin: 0 auto;
     margin-top: 0.25em;
     padding: 0.5em;
+    transition: box-shadow 0.2s;
     width: 300px;
+}
+
+.getting-there a:active img {
+    box-shadow: none;
 }
 
 /* ==========================================================================
