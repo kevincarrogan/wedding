@@ -311,7 +311,7 @@ address {
     margin: 0 auto;
     margin-top: 0.25em;
     padding: 0.5em;
-    transition: box-shadow 0.2s;
+    transition: box-shadow 0.05s;
     width: 300px;
 }
 
