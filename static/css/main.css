@@ -99,6 +99,7 @@ body {
     margin: 0 auto;
     padding: 2em 1em;
     text-align: center;
+    text-rendering: optimizeLegibility;
     width: 360px;
 }
 
