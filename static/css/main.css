@@ -447,6 +447,7 @@ address {
 
     .header-wrapper {
         background-color: #fcfcfc;
+        border-right: 1px solid #ccc;
         bottom: 0;
         box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
         left: 0;
