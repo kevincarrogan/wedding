@@ -449,7 +449,7 @@ address {
         background-color: #fcfcfc;
         border-right: 1px solid #ccc;
         bottom: 0;
-        box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+        box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
         left: 0;
         overflow: scroll;
         position: fixed;
